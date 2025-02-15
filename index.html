@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkysNet</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+	 .navbar a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 15px;
+        transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+        color: #e50914;
+    }
+        .watch-now {
+            display: block;
+            width: 300px;
+            margin: 15px auto;
+            padding: 10px;
+            background-color: #e50914;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.2s;
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+        }
+        .watch-now:hover {
+            background-color: #b20710;
+            transform: scale(1.00);
+        }
+        .slide {
+            position: relative;
+            text-align: center;
+            display: inline-block;
+        }
+        .slide img {
+            width: 100%;
+            max-width: 2000px;
+            border-radius: 70px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SkyShowtime logó -->
+    <div class="logo">
+        <img src="skysnet.png" alt="SkyShowtime">
+    </div>
+	<div class="navbar" align="center">
+	<a href="filmek.html">Filmek</a>
+	<a href="sorozatok.html">Sorozatok</a>
+	</div>
+
+    <!-- Kép slider -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="teds.jpeg" alt="Ted">
+                <a href="ted.html" class="watch-now">Nézd meg most</a>
+            </div>
+            <div class="slide">
+                <img src="tking.jpg" alt="Tulsa King">
+                <a href="tulsa king.html" class="watch-now">Nézd meg most</a>
+            </div>
+            <div class="slide">
+                <img src="dered.jpg" alt="Dexter">
+                <a href="dextereredendobun.html" class="watch-now">Nézd meg most</a>
+            </div>
+            <div class="slide">
+                <img src="am.jpg" alt="American Gigolo">
+                <a href="amerikai gigolo.html" class="watch-now">Nézd meg most</a>
+            </div>
+            <div class="slide">
+                <img src="monster.jpg" alt="Monsters: Lyle and Eric Menendez Story">
+                <a href="szornyetegek Lyle és Erik Menendez.html" class="watch-now">Nézd meg most</a>
+            </div>
+        </div>
+
+        <!-- Nyilak -->
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+
+        <!-- Navigációs pontok -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+	
+    <script src="script.js"></script> 
+	
+</body>
+</html>
